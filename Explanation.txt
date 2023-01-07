@@ -1,0 +1,33 @@
+**Explanation for the solution**
+
+**This is the Brute-Force Algorithm 
+
+The value of "optimalBlock" will be "3rd-index" for the given input.
+
+Here is how the function works with the given input:
+
+1) The function first initializes the "optimalBlock" variable to the index of the first block
+   ('0') and he 'optimalDistance' variable to the maximum possible distance (the number of blocks).
+
+2) It then loops through each block using the 'i' variable. For each block, initializes the 'distance' variable is '0';
+
+3) Next, it loops through each required building using the 'j' variable. For each required building, it checks
+   if the building is present in the current block ('block[i] [reqs[j]]').
+   If the building is present, it updates the 'distance' variable to the maximum of the current.
+
+4) If the required building is not present in the current block, the function finds the closest block with the required building. It does 
+   this by looping through each block from the current block to the end of the list using the 'k' variable. If it finds a block with the required building ('blocks[k][reqs[j]]' is 'true'), 
+   it updates the 'distance' variable to the difference between the indices of the current block and the block with 
+   the required building ('k - i'). It then breaks out of the loop to move on the next required building.
+
+5) After looping through all fo the required buildings, the function checks if the 'distance' variable is smaller than 
+   the current 'optimalDistance'. If it is, it updates the 'optimalBlock' variable to the index of the current block and the 'optimalDistance' variable to the 'distance'.
+
+6) Finally, after looping through all of the blocks, the function returns the 'optimalBlock' variable, which is the index of the block that is most optimal for you.
+
+
+That's it. Thank you.
+
+
+
+  

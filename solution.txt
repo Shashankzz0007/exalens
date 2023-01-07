@@ -1,0 +1,7 @@
+function apartmentHunting(blocks, reqs) {
+  // Write your code here.
+}
+
+// Do not edit the line below.
+exports.apartmentHunting = apartmentHunting;
+
